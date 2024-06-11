@@ -2,7 +2,7 @@
 
 This is a 3D portfolio website built with React.js, Three.js, Tailwind CSS, and Framer Motion. The portfolio showcases various projects and skills with a focus on 3D visuals, user interfaces, and web applications.
 
-![Banner](./public/Screenshot%202024-06-11%20104836.png)
+![Screenshot 2024-06-11 104836](https://github.com/AnushkaShendge/3D-Portfolio/assets/145828745/05d4d35f-6963-4e9f-8536-b448b3a9e1bd)
 
 ## Table of Contents
 
@@ -19,8 +19,7 @@ This is a 3D portfolio website built with React.js, Three.js, Tailwind CSS, and 
 
 This 3D portfolio website is designed to highlight skills and projects in web development, particularly focusing on 3D visuals created with Three.js, animations with Framer Motion, and styling with Tailwind CSS.
 
-![Screenshot 2024-06-11 104836](https://github.com/AnushkaShendge/3D-Portfolio/assets/145828745/f436690d-c406-4a3a-b8b1-065e1f87aa9c
-)
+![Screenshot 2024-06-11 104903](https://github.com/AnushkaShendge/3D-Portfolio/assets/145828745/d05ef1db-9466-402b-a759-4d9f43889a79)
 
 ## Features
 
