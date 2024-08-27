@@ -12,7 +12,6 @@ This is a 3D portfolio website built with React.js, Three.js, Tailwind CSS, and 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
