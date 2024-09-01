@@ -26,6 +26,9 @@ import {
   github,
   chatbot,
   currency,
+  airbnb,
+  habit,
+  py,
 } from "../assets";
 
 export const navLinks = [
@@ -99,16 +102,15 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Start Up",
+    title: "MERN Project",
+    Project_name: "Chat App",
     icon: github,
     iconBg: "#383E56",
     date: "May 2024 - July 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining web applications using MERN and other related technologies.",
+      "Engineered a responsive, mobile-first user interface with a fixed and toggleable sidebar for seamless navigation across devices. Ensured accessibility compliance by implementing ARIA landmarks and roles, providing an inclusive experience for users with disabilities.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   // {
@@ -181,12 +183,54 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Chatbot",
+    name: "Gender Classification",
     description:
-      "The chatbot for elders is designed to provide a user-friendly interface for elderly individuals, offering assistance and companionship through conversation. Tailored with simplicity in mind, it serves as a virtual companion, answering questions, providing reminders, and engaging in meaningful dialogue to enhance the well-being and social interaction of elderly users.",
+      "This project is a Convolutional Neural Network (CNN) model designed to classify images as male or female. The model has been trained on a custom dataset and achieves an accuracy of 96.97% on the test set.",
     tags: [
       {
-        name: "react",
+        name: "Tensoflow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CNN",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Keras",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: py,
+    source_code_link: "https://github.com/AnushkaShendge/Gender_ClassificationThrough_Img",
+  },
+  {
+    name: "Airbnb Clone",
+    description:
+      "This is a web application built using the MERN stack (MongoDB, Express, React, Node.js). The project implements user authentication using JWT tokens and is styled using Tailwind CSS. Users can also upload photos as part of their profiles or posts.",
+    tags: [
+      {
+        name: "Mongodb",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Reactjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: airbnb,
+    source_code_link: "https://github.com/AnushkaShendge/Airbnb_Clone",
+  },
+  {
+    name: "Habit Tracker",
+    description:
+      "This project allows users to track their daily habits, view their progress, and share thoughts with the community. Built using the MERN stack (MongoDB, Express, React, Node.js), this application provides a seamless experience for habit management.",
+    tags: [
+      {
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -198,50 +242,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: chatbot,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Currecy Converter",
-    description:
-      "The currency converter webpage project enables users to input currencies and amounts, fetching real-time exchange rates to calculate and display the converted amounts dynamically. It offers a seamless user experience, facilitating easy currency conversion for various financial transactions.",
-    tags: [
-      {
-        name: "html",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: currency,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: habit,
+    source_code_link: "https://github.com/AnushkaShendge/Habit-Tracker",
   },
 ];
 

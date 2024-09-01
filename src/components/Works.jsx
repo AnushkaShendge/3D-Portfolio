@@ -8,12 +8,15 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, image, source_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="flex-none w-1/3">
+    <motion.div 
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
+      className="w-full sm:w-[47%] md:w-[30%] lg:w-[23%] flex-none" // Adjust width based on screen size
+    >
       <Tilt
         options={{
           max: 45,
           scale: 1,
-          speed: 450
+          speed: 450,
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
@@ -26,7 +29,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_link }) => 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover ">
             <div
               onClick={() => window.open(source_link, "_blank")}
-              className="black-gredient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
             </div>
@@ -55,7 +58,7 @@ const Works = () => {
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
-      <div className="w-full flex flex-wrap gap-7">
+      <div className="flex flex-wrap justify-center gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
