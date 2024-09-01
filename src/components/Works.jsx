@@ -10,7 +10,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_link }) => 
   return (
     <motion.div 
       variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
-      className="w-full sm:w-[47%] md:w-[30%] lg:w-[23%] flex-none" // Adjust width based on screen size
+      className="w-full m-12 sm:w-[47%] md:w-[30%] lg:w-[23%] flex-none" // Adjust width based on screen size
     >
       <Tilt
         options={{

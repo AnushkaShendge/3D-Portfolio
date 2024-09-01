@@ -31,6 +31,9 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import currency from "./currency.png";
 import chatbot from "./chatbot.png";
+import airbnb from "./airbnb.png";
+import habit from "./habit.png";
+import py from "./py.png";
 
 export {
   chatbot,
@@ -63,4 +66,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  habit,
+  py,
+  airbnb,
 };
