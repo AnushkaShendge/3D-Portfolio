@@ -31,73 +31,83 @@ import {
   py,
 } from "../assets";
 
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+const navLinks = [
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "skills", title: "Skills" },
+  { id: "achievements", title: "Achievements" },
+  { id: "contact", title: "Contact" },
 ];
+
+const personalInfo = {
+  name: "Anushka Shendge",
+  location: "Mumbai, India",
+  phone: "+91-7977409706",
+  email: "anushka.shendge22@spit.ac.in",
+  links: {
+    linkedin: "your-linkedin-url",
+    github: "your-github-url",
+    leetcode: "your-leetcode-url",
+  },
+};
+
+const education = {
+  degree: "B.Tech in Computer Science (AIML)",
+  institution: "Sardar Patel Institute of Technology, Mumbai",
+  duration: "2022 – 2026",
+  cgpa: "8.14",
+};
+
+const skills = {
+  languages: ["Java", "SQL", "JavaScript", "TypeScript", "Python"],
+  frameworks: [
+    "React",
+    "React Native",
+    "Node",
+    "Express",
+    "NextJS",
+    "Scikit-learn",
+    "Pandas",
+    "Matplotlib",
+  ],
+  tools: ["Git", "MongoDB", "MySQL", "VS Code", "WebSockets", "Selenium"],
+  coursework: [
+    "Machine Learning",
+    "Operating Systems",
+    "Data Structures & Algorithms",
+    "Computer Networks",
+  ],
+};
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Web Development",
+    icon: "web.png",
   },
   {
-    title: "React Developer",
-    icon: reactjs,
+    title: "Mobile Development",
+    icon: "mobile.png",
   },
   {
-    title: "UI/UX Design",
-    icon: backend,
+    title: "AI/ML Development",
+    icon: "ai.png",
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Java",
+    icon: "java.png",
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Python",
+    icon: "python.png",
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "React",
+    icon: "react.png",
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
+  // Add other technologies from your skills list
 ];
 
 const experiences = [
@@ -183,68 +193,119 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Gender Classification",
+    name: "Women Empowerment App",
     description:
-      "This project is a Convolutional Neural Network (CNN) model designed to classify images as male or female. The model has been trained on a custom dataset and achieves an accuracy of 96.97% on the test set.",
-    tags: [
-      {
-        name: "Tensoflow",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CNN",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Keras",
-        color: "pink-text-gradient",
-      },
+      "All-in-One mobile application with modular ecosystem for women's safety, finance, and growth.",
+    tags: ["React Native", "Node.js", "MongoDB"],
+    features: [
+      "Built modular ecosystem—Shakti (Safety), Shree (Finance), Sakhi (Growth)",
+      "Implemented SOS system with live streaming, OTP verification",
+      "Expense tracker & financial simulation",
+      "Skill matcher & community forum",
     ],
-    image: py,
-    source_code_link: "https://github.com/AnushkaShendge/Gender_ClassificationThrough_Img",
+    category: "Mobile",
+    github: "project-url",
   },
   {
-    name: "Airbnb Clone",
+    name: "Rapid Cross-Border Compliance Checker",
     description:
-      "This is a web application built using the MERN stack (MongoDB, Express, React, Node.js). The project implements user authentication using JWT tokens and is styled using Tailwind CSS. Users can also upload photos as part of their profiles or posts.",
-    tags: [
-      {
-        name: "Mongodb",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Reactjs",
-        color: "pink-text-gradient",
-      },
+      "AI-powered platform for compliance automation in shipments.",
+    tags: ["Flask", "React", "MongoDB", "CrewAI"],
+    features: [
+      "RAG model for country-specific rules",
+      "Prohibited item checker with multi-format export",
+      "Image-based compliance analysis",
+      "Multilingual support",
     ],
-    image: airbnb,
-    source_code_link: "https://github.com/AnushkaShendge/Airbnb_Clone",
+    category: "AI",
+    github: "project-url",
   },
   {
-    name: "Habit Tracker",
+    name: "AI-Powered Multilingual Communication Assistant",
     description:
-      "This project allows users to track their daily habits, view their progress, and share thoughts with the community. Built using the MERN stack (MongoDB, Express, React, Node.js), this application provides a seamless experience for habit management.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
+      "Voice-to-text multilingual communication platform.",
+    tags: ["Whisper", "Bhashini", "React", "Flask"],
+    features: [
+      "Voice → structured text via Whisper",
+      "Real-time multilingual translation",
+      "Context-aware suggestions",
+      "Personalized corrections",
     ],
-    image: habit,
-    source_code_link: "https://github.com/AnushkaShendge/Habit-Tracker",
+    category: "AI",
+    github: "project-url",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const achievements = [
+  {
+    title: "CodeCrafter 2.0 Hackathon",
+    organization: "Saraswati College of Engineering, Navi Mumbai",
+    position: "1st Place",
+    year: "2025",
+  },
+  {
+    title: "Aairavat",
+    organization: "Sardar Patel Institute of Technology",
+    position: "1st Place",
+    year: "2025",
+  },
+  {
+    title: "Level Up",
+    organization: "KJ Somaiya College of Engineering",
+    position: "1st Place",
+    year: "2025",
+  },
+  {
+    title: "Blockchain Hackathon",
+    organization: "IIT Kharagpur Summit",
+    position: "1st Runner-up",
+    year: "2025",
+  },
+  {
+    title: "Logithon",
+    organization: "IIT Bombay",
+    position: "1st Runner-up",
+    year: "2025",
+  },
+  {
+    title: "Odoo Hackathon",
+    organization: "Gujarat Vidyapeeth",
+    position: "2nd Runner-up",
+    year: "2025",
+  },
+  {
+    title: "HACKANOVA",
+    organization: "AIML Domain",
+    position: "Winner",
+    year: "2025",
+  },
+  {
+    title: "Technitude International Hackathon",
+    organization: "SP Jain School of Global Management",
+    position: "2nd Runner-up",
+    year: "2025",
+  },
+];
+
+const roles = [
+  {
+    title: "Marketing Head",
+    company: "IPL Auction, Oculus",
+    location: "SPIT, Mumbai",
+    date: "Sept 2024",
+  },
+];
+
+export {
+  navLinks,
+  personalInfo,
+  education,
+  skills,
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  achievements,
+  roles,
+};

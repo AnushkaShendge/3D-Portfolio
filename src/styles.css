@@ -1,0 +1,168 @@
+/* Tailwind CSS v3.0+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-primary text-primary-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+a {
+  @apply text-primary no-underline;
+}
+
+a:hover {
+  @apply underline;
+}
+
+button {
+  @apply bg-primary text-white font-bold py-2 px-4 rounded;
+}
+
+button:hover {
+  @apply bg-primary-dark;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.section {
+  @apply py-16;
+}
+
+.grid {
+  @apply grid gap-8;
+}
+
+.flex {
+  @apply flex;
+}
+
+.flex-col {
+  @apply flex-col;
+}
+
+.items-center {
+  @apply items-center;
+}
+
+.justify-center {
+  @apply justify-center;
+}
+
+.text-center {
+  @apply text-center;
+}
+
+.mb-4 {
+  @apply mb-4;
+}
+
+.mt-4 {
+  @apply mt-4;
+}
+
+.ml-4 {
+  @apply ml-4;
+}
+
+.mr-4 {
+  @apply mr-4;
+}
+
+.rounded {
+  @apply rounded;
+}
+
+.shadow {
+  @apply shadow;
+}
+
+.transition {
+  @apply transition-all;
+}
+
+.duration-300 {
+  @apply duration-300;
+}
+
+.ease-in-out {
+  @apply ease-in-out;
+}
+
+.bg-primary {
+  @apply bg-blue-500;
+}
+
+.bg-primary-dark {
+  @apply bg-blue-700;
+}
+
+.bg-secondary {
+  @apply bg-gray-800;
+}
+
+.bg-tertiary {
+  @apply bg-gray-700;
+}
+
+.text-primary {
+  @apply text-blue-500;
+}
+
+.text-primary-font {
+  @apply text-gray-100;
+}
+
+.border-primary {
+  @apply border-blue-500;
+}
+
+.border-secondary {
+  @apply border-gray-800;
+}
+
+.border-tertiary {
+  @apply border-gray-700;
+}
+
+.skill-tag {
+  @apply px-3 py-1 rounded-full bg-tertiary text-white text-sm;
+}
+
+.achievement-card {
+  @apply bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:shadow-lg transition-all;
+}
+
+.filter-buttons {
+  @apply flex gap-3 mt-4;
+}
+
+.filter-buttons button {
+  @apply px-4 py-2 rounded-lg transition-all;
+}
+
+.filter-buttons button.active {
+  @apply bg-tertiary text-white;
+}
+
+.skill-category {
+  @apply bg-tertiary rounded-2xl p-6;
+}
