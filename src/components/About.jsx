@@ -65,7 +65,7 @@ const About = () => {
           <div className="mt-4 space-y-2 text-secondary">
             <p className="text-lg font-semibold text-white/90">{education.institution}</p>
             <p className="text-sm">{education.duration}</p>
-            <p className="text-sm font-medium">CGPA: {education.cgpa}</p>
+            {/* <p className="text-sm font-medium">CGPA: {education.cgpa}</p> */}
           </div>
         </div>
       </motion.div>

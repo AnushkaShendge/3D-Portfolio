@@ -55,7 +55,7 @@ const education = {
   degree: "B.Tech in Computer Science (AIML)",
   institution: "Sardar Patel Institute of Technology, Mumbai",
   duration: "2022 – 2026",
-  cgpa: "8.14",
+  // cgpa: "8.14",
 };
 
 const skills = {
@@ -204,7 +204,8 @@ const projects = [
       "Skill matcher & community forum",
     ],
     category: "Mobile",
-    github: "project-url",
+    github: 'https://github.com/AnushkaShendge/ODOO',
+    image: "odoo"
   },
   {
     name: "Rapid Cross-Border Compliance Checker",
@@ -218,7 +219,8 @@ const projects = [
       "Multilingual support",
     ],
     category: "AI",
-    github: "project-url",
+    github: "https://github.com/AnushkaShendge/IITB_LOGITHON",
+    image: "iitb"
   },
   {
     name: "AI-Powered Multilingual Communication Assistant",
@@ -232,7 +234,8 @@ const projects = [
       "Personalized corrections",
     ],
     category: "AI",
-    github: "project-url",
+    github: "https://github.com/AnushkaShendge/tcet_unoff",
+    image: "tcet"
   },
 ];
 
